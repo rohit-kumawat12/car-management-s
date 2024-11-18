@@ -3,7 +3,7 @@ import NoteContext from "./NoteContext";
 
  const NoteState = (props) => {
 
-    const host = 'https://car-management-u0su.onrender.com/api/';
+    const host = 'https://car-management-s.onrender.com/api/';
     
     const noteInitial  = [ ]
     

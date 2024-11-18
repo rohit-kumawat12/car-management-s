@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
     const lowercaseEmail = crad.uemail.toLowerCase();
     const response = await fetch(
-      `https://car-management-u0su.onrender.com/api/auth/login`,
+      `https://car-management-s.onrender.com/api/auth/login`,
       {
         method: "POST",
         headers: {
