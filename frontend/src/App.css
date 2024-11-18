@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4a90e2;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar .navbarbrand {
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addnote-box {
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addnote-box h4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #4a90e2;
+}
+
+.user-box {
+  margin-bottom: 1.5rem;
+}
+
+.user-box input,
+.user-box textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.user-box label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #3a78c2;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-radius: 8px;
+  width: 100% !important;
+  height: auto;
+  margin: 0.5rem;
+}
+
+.card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.warningmsg {
+  color: red;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Button to open the modal */
+.add-car-button {
+  padding: 0.8rem 1.5rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.add-car-button:hover {
+  background: #3a78c2;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Box */
+.modal {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-header h4 {
+  margin: 0;
+  color: #4a90e2;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+/* Form Styles */
+.add-car-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.add-car-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.add-car-form .form-group input,
+.add-car-form .form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-car-form .form-group input:focus,
+.add-car-form .form-group textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #3a78c2;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}

@@ -1,0 +1,214 @@
+.Background-main{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Background-overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background: linear-gradient(to right bottom, rgb(255 255 255 / 13%), rgb(255 255 255 / 14%));
+    backdrop-filter: blur(2rem);
+}
+
+.Background-main .circle1,
+.Background-main .circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.Background-main .circle1 {
+  top: 5%;
+  right: 15%;
+}
+
+.Background-main .circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+
+.navbar{
+    background: rgb(188 188 188);
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    padding: 0% 2%;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 70px;
+}
+
+.navbar-h{
+    height: 80px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.addnote-box {
+    padding: 40px;
+    background: rgba(24, 20, 20, 0.987);
+    box-sizing: border-box;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    border-radius: 10px;
+  }
+  
+  .addnote-box .user-box {
+    position: relative;
+  }
+  
+  .addnote-box .user-box input, .addnote-box .user-box textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+  }
+  
+  .addnote-box .user-box label {
+    position: absolute;
+    pointer-events: none;
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 12px;
+    font-weight:500;
+  }
+  
+  .addnote-box .user-box input:focus ~ label,
+  .addnote-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 12px;
+  }
+  
+  .addnote-box form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    /* margin-top: 40px; */
+    letter-spacing: 4px;
+    background: #1ace23d0;
+    border: none;
+  }
+
+  .addnote-box h4{
+    display: block;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: -20px 0 20px 0px;
+  }
+  
+  .addnote-box button:hover {
+    background: #1ace23d0;
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #161716, 0 0 1px #161617, 0 0 1px #161617, 0 0 12px #161617;
+  }
+  
+  .addnote-box button span {
+    position: absolute;
+    display: block;
+  }
+
+  .allnotesbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .allnotesbox .card{
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  }
+  
+  .loginContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 90px);
+  }
+  
+  .loginContainer .addnote-box{
+    min-width: 60%;
+  }
+
+  .warningmsg{
+    color: red;
+  }
+
+  .navbarbrand{
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4rem;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active{
+      -webkit-box-shadow: 0 0 0 30px rgb(188 188 188) inset !important;
+  }
+
+  .mybtn{
+    border: none;
+    background: none;
+  }
+
+  .myprofile-btn{
+    display: flex;
+    background: #acacac;
+    width: 35px;
+    border: 2px solid gray;
+    height: 35px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .modal-content{
+    background:rgb(188 188 188);
+  }
+
+  .modal-dialog{
+    max-width: 70% !important;
+  }
+
+  .images-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .images-container img{
+    width: 40%;
+  }
